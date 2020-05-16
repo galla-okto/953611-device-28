@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anna](https://up.htmlacademy.ru/htmlcss/28/user/953611).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Киреева](https://htmlacademy.ru/profile/ekateric).
 
 ---
 
