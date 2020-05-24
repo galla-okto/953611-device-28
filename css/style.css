@@ -116,7 +116,6 @@ overflow: hidden;
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
 }
 
 .main-header {
@@ -423,7 +422,6 @@ overflow: hidden;
   min-height: 504px;
   padding: 0;
   padding-top: 17px;
-  margin: 0;
   margin-bottom: 88px;
 
   z-index: 200;
@@ -658,7 +656,6 @@ background-image: url("../img/slider-button.svg");
 
 .services {
   padding: 0;
-  margin: 0;
   margin-bottom: 94px;
 
   min-height: 388px;
@@ -808,7 +805,6 @@ background-image: url("../img/slider-button.svg");
 
 .partners {
   padding: 0;
-  margin: 0;
   margin-bottom: 84px;
 
   min-height: 100px;
@@ -1090,12 +1086,15 @@ background-image: url("../img/slider-button.svg");
 
 .left,
 .right {
-  background: #efefef;
   flex-grow: 1;
 }
 
+.left {
+  background-image: linear-gradient(#DCDCDC 70px, #E5E5E5 0);
+}
+
 .right {
-  background: #ffffff;
+  background-image: linear-gradient(#E5E5E5 70px, #ffffff 0);
 }
 
 .wrap {
@@ -1106,6 +1105,8 @@ background-image: url("../img/slider-button.svg");
 .catalog-columns {
   padding: 0;
   width: 1160px;
+
+  background-image: linear-gradient(#E5E5E5 70px, #ffffff 0);
 
   display: flex;
   justify-content: space-between;;
@@ -1124,7 +1125,7 @@ background-image: url("../img/slider-button.svg");
   margin: 0;
   padding: 0;
 
-  background-color: #efefef;
+  background-color: #E5E5E5;
 }
 
 .filters-title {
@@ -1136,7 +1137,7 @@ background-image: url("../img/slider-button.svg");
 
   min-height: 47px;
 
-  background-color: #dbdbdb;
+  background-color: #DCDCDC;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -1147,20 +1148,18 @@ background-image: url("../img/slider-button.svg");
 }
 
 .catalog {
-  background-color: #ffffff;
+  background-image: linear-gradient(#E5E5E5 70px, #ffffff 0);
 }
 
 .catalog-title {
   margin: 0;
   padding: 0;
   padding-top: 23px;
-  padding-left: 60px;
-  padding-right: 68px;
   margin-bottom: 69px;
 
   min-height: 47px;
 
-  background-color: #ebebeb;
+  background-color: #E5E5E5;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -1174,7 +1173,7 @@ background-image: url("../img/slider-button.svg");
   padding-left: 60px;
   padding-top: 67px;
 
-  background-color: #efefef;
+  background-color: #E5E5E5;
 }
 
 .filter-item {
@@ -1500,6 +1499,13 @@ background-image: url("../img/slider-button.svg");
 
   padding: 65px 0;
   margin-top: 137px;
+}
+
+.main-footer-catalog {
+  color: #ffffff;
+  background-color: #464646;
+
+  padding: 65px 0;
 }
 
 .main-footer a {
