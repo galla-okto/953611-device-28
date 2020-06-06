@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <!--подключить локально шрифты, а не через CDN-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="fonts/gilroyextrabold.woff" rel="stylesheet">
+  <link href="fonts/gilroyextrabold.woff2" rel="stylesheet">
+  <link href="fonts/gilroylight.woff" rel="stylesheet">
+  <link href="fonts/gilroylight.woff2" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -36,7 +38,7 @@
           <div class="catalog-menu">
             <ul class="catalog-menu-1">
               <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li class="catalog-menu-active"><a>Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
             <ul class="catalog-menu-2">
@@ -72,12 +74,9 @@
       <div class="catalog-columns">
 
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-
-            <p class="filters-title">Фильтр:</p>
+            <h2 class="filters-title">Фильтр:</p>
 
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-              <div class="line"></div>
 
               <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
@@ -152,7 +151,19 @@
         <section class="catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
 
-          <p class="catalog-title">Сортировка:</p>
+          <section class="sorting">
+            <h3 class="sorting-title">Сортировка:</p>
+            <ul class="sorting-list">
+              <li class="sorting-item">По цене</li>
+              <li class="sorting-item">По типу</li>
+              <li class="sorting-item">По популярности</li>
+            </ul>
+
+            <div>
+              <button class="up" type="button" onclick="">Up</button>
+              <button class="down" type="button" onclick="">Down</button>
+            </div>
+          </section>
 
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -212,7 +223,7 @@
               </div>
             </li>
 
-            <li class="catalog-item">
+            <li class="catalog-item-new">
               <div class="catalog-item-image-actions">
                 <div class="actions">
                   <a class="button add-to-basket" href="#">В корзину</a>
@@ -231,6 +242,18 @@
               </div>
             </li>
           </ul>
+
+          <section class="pagination">
+            <button class="page-back" type="button" onclick="">Назад</button>
+
+            <ul class="page-list">
+              <li><button class="page-1" type="button" onclick="">1</button></li>
+              <li><button class="page-2" type="button" onclick="">2</button></li>
+              <li><button class="page-3" type="button" onclick="">3</button></li>
+            </ul>
+
+            <button class="page-forward" type="button" onclick="">Вперед</button>
+          </section>
         </section>
 
       </div>
@@ -250,13 +273,18 @@
         </a>
 
         <ul class="container-row-1-links">
-          <li><a href="login.html" class="link">
+          <li>
+            <a href="login.html" class="link">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
                 <path
                   d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
               </svg>
-              Валентин Петухов</a>
-            <!--<a class="exit">Выйти</a>-->
+              Валентин Петухов
+            </a>
+          </li>
+
+          <li>
+            <a class="exit">Выйти</a>
           </li>
 
           <li><a href="compare.html" class="link">
