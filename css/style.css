@@ -9,8 +9,6 @@
 }
 
 body {
-  margin: 0;
-
   min-width: 1200px;
 
   font-family: "Open Sans", Arial, sans-serif;
@@ -52,6 +50,7 @@ input[type="radio"].visually-hidden {
 .button {
   display: inline-block;
   min-width: 160px;
+  border: none;
 
   padding-top: 10px;
   padding-bottom: 9px;
@@ -68,8 +67,6 @@ input[type="radio"].visually-hidden {
 
   background-image: linear-gradient(to bottom, transparent 40%, #f4d361 40%, #f4d361 42.5%, #f0c52e 42.5%, #f0c52e 57.5%, #f4d361 57.5%, #f4d361 60%, transparent 60%);
   background-color: transparent;
-
-  border: none;
 }
 
 .button:hover,
