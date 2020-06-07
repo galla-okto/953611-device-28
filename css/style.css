@@ -223,6 +223,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input {
   box-sizing: border-box;
+  height: 49px;
   width: 355px;
 
   padding-top: 0;
@@ -233,10 +234,12 @@ input[type="radio"].visually-hidden {
 
   font: inherit;
 
+  color: #000000;
+
   background-color: transparent;
   background-image: url("../img/icons/search.svg");
   background-repeat: no-repeat;
-  background-position: 2px 10px;
+  background-position: 2px 15px;
 
   border: none;
   border-bottom: 2px solid transparent;
@@ -267,7 +270,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.search-form input:hover {
+.search-form input:hover::placeholder {
   opacity: 0.6;
 }
 
@@ -387,15 +390,6 @@ input[type="radio"].visually-hidden {
   color: rgba(0,0,0,0.2);
 }
 
-.site-navigation li:first-child {
-  width: 500px;
-
-  padding-right: 40px;
-  display: inline-block;
-
-  position: relative;
-}
-
 .main-menu > a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -403,6 +397,15 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3.5px;
+}
+
+.catalog {
+  width: 500px;
+
+  padding-right: 40px;
+  display: inline-block;
+
+  position: relative;
 }
 
 .catalog::after {
