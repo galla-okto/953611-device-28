@@ -1,15 +1,31 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/gilroyextrabold.woff2") format("woff2"),
-       url("fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/gilroylight.woff2") format("woff2"),
-       url("fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -55,6 +71,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
+  vertical-align: baseline;
   min-width: 160px;
   border: none;
 
@@ -150,11 +167,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 22px;
 }
 
-.main-header-logo:hover {
+.main-header-logo[href]:hover {
   opacity: 0.5;
 }
 
-.main-header-logo:active {
+.main-header-logo[href]:active {
   opacity: 0.2;
 }
 
@@ -215,7 +232,6 @@ input[type="radio"].visually-hidden {
   margin: 0 0;
 
   font: inherit;
-  vertical-align: bottom;
 
   background-color: transparent;
   background-image: url("../img/icons/search.svg");
@@ -242,39 +258,33 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input:focus {
-  width: 355px;
-
-  border: none;
   border-bottom: 2px solid #000000;
+
+  opacity: 1;
 }
 
-.search-form input {
-  opacity: 0.2;
+.search-form input::placeholder {
+  opacity: 0.3;
 }
 
 .search-form input:hover {
-  opacity: 0.5;
-}
-
-.search-form input:focus {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .search-form input:focus + .simple-button {
   display: block;
-  opacity: 1;
 }
 
-.simple-button:hover,
-.simple-button:focus {
-  display: block;
-  opacity: 1;
-
+.simple-button:hover {
   background-color: #000000;
   color: #ffffff;
 }
 
+.simple-button:focus,
 .simple-button:active {
+  display: block;
+  opacity: 1;
+
   color: rgba(255,255,255,0.3);
 }
 
@@ -285,13 +295,14 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.user-navigation li {
-  position: relative;
-
+.login-link {
   padding-left: 26px;
+  display: inline-block;
+
+  position: relative;
 }
 
-.user-navigation a::before {
+.login-link::before {
   content: "";
 
   position: absolute;
@@ -317,13 +328,14 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.compare-basket-navigation .compare {
-  position: relative;
-
+.compare-link {
   padding-left: 20px;
+  display: inline-block;
+
+  position: relative;
 }
 
-.compare a::before {
+.compare-link::before {
   content: "";
 
   position: absolute;
@@ -338,13 +350,14 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.compare-basket-navigation .basket {
-  position: relative;
-
+.basket-link {
   padding-left: 24px;
+  display: inline-block;
+
+  position: relative;
 }
 
-.basket a::before {
+.basket-link::before {
   content: "";
 
   position: absolute;
@@ -375,26 +388,12 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li:first-child {
-  width: 256px;
+  width: 500px;
 
-  margin-right: 284px;
+  padding-right: 40px;
+  display: inline-block;
 
   position: relative;
-}
-
-.catalog::after {
-  content: "";
-
-  position: absolute;
-  top: 6px;
-  right: 1px;
-
-  width: 16px;
-  height: 16px;
-
-  background-image: url("../img/icons/plus.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .main-menu > a {
@@ -406,6 +405,21 @@ input[type="radio"].visually-hidden {
   letter-spacing: 3.5px;
 }
 
+.catalog::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  right: 300px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .catalog-menu {
   display: none;
 
@@ -413,9 +427,11 @@ input[type="radio"].visually-hidden {
   top: 100%;
   left: -60px;
 
-  min-width: 1160px;
+  width: 1040px;
 
   padding: 0;
+  padding-left: 60px;
+  padding-right: 60px;
   margin: 0;
 
   background-color: #f7e296;
@@ -432,7 +448,7 @@ input[type="radio"].visually-hidden {
 
   padding: 0;
   margin: 0;
-  margin-left: 60px;
+  margin-right: 40px;
 
   font-size: 15px;
   line-height: 36px;
@@ -447,3 +463,29 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
   margin-left: auto;
 }
+
+.product-link-virtual {
+  background-image: url("../img/content/virtual.svg");
+}
+
+.product-link-monopods {
+  background-image: url("../img/content/monopods.svg");
+}
+
+.product-link-camera {
+  background-image: url("../img/content/camera.svg");
+}
+
+.product-link-bracelet {
+  background-image: url("../img/content/bracelet.svg");
+}
+
+.product-link-smart-watch {
+  background-image: url("../img/content/smart-watch.svg");
+}
+
+.product-link-quadrocopters {
+  background-image: url("../img/content/quadrocopters.svg");
+}
+
+

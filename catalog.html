@@ -21,13 +21,13 @@
         </form>
 
         <ul class="user-navigation">
-          <li><a href="profile.html">Валентин Петухов</a></li>
-          <li class="user-navigation-inactive"><a href="logout.html">Выйти</a></li>
+          <li><a href="profile.html" class="login-link">Валентин Петухов</a></li>
+          <li><a href="logout.html" class="user-navigation-inactive">Выйти</a></li>
         </ul>
 
         <ul class="compare-basket-navigation">
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li><a href="#" class="compare-link">Сравнить</a></li>
+          <li><a href="#" class="basket-link">Корзина</a></li>
         </ul>
       </div>
       <ul class="site-navigation">
@@ -91,7 +91,6 @@
                 </div>
               </fieldset>
 
-              <div class="line"></div>
               <fieldset class="filter-item filter-item2">
                 <legend>Цвет</legend>
                 <ul>
@@ -123,7 +122,6 @@
                 </ul>
               </fieldset>
 
-              <div class="line"></div>
               <fieldset class="filter-item">
                 <legend>Bluetooth</legend>
                 <ul>
@@ -150,15 +148,15 @@
           <section class="sorting">
             <h3 class="sorting-title">Сортировка:</p>
             <ul class="sorting-list">
-              <li class="sorting-item">По цене</li>
-              <li class="sorting-item">По типу</li>
-              <li class="sorting-item">По популярности</li>
+              <li class="sorting-item"><a href="#">По цене</a></li>
+              <li class="sorting-item"><a href="#">По типу</a></li>
+              <li class="sorting-item"><a href="#">По популярности</a></li>
             </ul>
 
-            <div>
-              <button class="up" type="button" onclick="">Up</button>
-              <button class="down" type="button" onclick="">Down</button>
-            </div>
+            <ul>
+              <li><a href="#" class="up">Up</a></li>
+              <li><a href="#" class="down">Down</a></li>
+            </ul>
           </section>
 
           <ul class="catalog-list">
@@ -219,7 +217,7 @@
               </div>
             </li>
 
-            <li class="catalog-item-new">
+            <li class="catalog-item catalog-item-new">
               <div class="catalog-item-image-actions">
                 <div class="actions">
                   <a class="button add-to-basket" href="#">В корзину</a>
@@ -240,15 +238,15 @@
           </ul>
 
           <section class="pagination">
-            <button class="page-back" type="button" onclick="">Назад</button>
+            <h2 class="visually-hidden">Страницы</h1>
 
-            <ul class="page-list">
-              <li><button class="page-1" type="button" onclick="">1</button></li>
-              <li><button class="page-2" type="button" onclick="">2</button></li>
-              <li><button class="page-3" type="button" onclick="">3</button></li>
+            <ul class="pagination-container">
+              <li><a href="#" class="page-back">Назад</a></li>
+              <li><a class="page-number page-number-active">1</a></li>
+              <li><a href="#" class="page-number">2</a></li>
+              <li><a href="#" class="page-number">3</a></li>
+              <li><a href="#" class="page-forward">Вперед</a></li>
             </ul>
-
-            <button class="page-forward" type="button" onclick="">Вперед</button>
           </section>
         </section>
 

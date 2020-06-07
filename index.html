@@ -21,12 +21,12 @@
         </form>
 
         <ul class="user-navigation">
-          <li><a href="login.html">Войти</a></li>
+          <li><a href="login.html" class="login-link">Войти</a></li>
         </ul>
 
         <ul class="compare-basket-navigation">
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li><a href="#" class="compare-link">Сравнить</a></li>
+          <li><a href="#" class="basket-link">Корзина</a></li>
         </ul>
       </div>
 
@@ -62,9 +62,9 @@
       <h2 class="visually-hidden">Топовые товары</h2>
 
       <ul class="slider-controls">
-        <li class="dot active-dot" onclick="currentSlide(1)">Первый</li>
-        <li class="dot" onclick="currentSlide(2)">Второй</li>
-        <li class="dot" onclick="currentSlide(3)">Третий</li>
+        <li class="dot active-dot">Первый</li>
+        <li class="dot">Второй</li>
+        <li class="dot">Третий</li>
       </ul>
 
       <ul class="slider-list">
@@ -81,14 +81,14 @@
 
             <table class="slide-description">
               <tr class="slide-description-numbers">
-                <td class="slide-description-column1" aria-labelledby="column1">8,5 м</td>
-                <td class="slide-description-column2" aria-labelledby="column2">5 кг</td>
-                <td class="slide-description-column1" aria-labelledby="column3">Карбон</td>
+                <td class="slide-description-column1" aria-labelledby="comment-product1-length">8,5 м</td>
+                <td class="slide-description-column2" aria-labelledby="comment-product1-weight">5 кг</td>
+                <td class="slide-description-column1" aria-labelledby="comment-product1-material">Карбон</td>
               </tr>
               <tr class="slide-description-numbers-comment">
-                <td id="column1">Длина палки</td>
-                <td id="column2">Вес палки</td>
-                <td id="column3">Материал</td>
+                <td id="comment-product1-length">Длина палки</td>
+                <td id="comment-product1-weight">Вес палки</td>
+                <td id="comment-product1-material">Материал</td>
               </tr>
             </table>
           </div>
@@ -107,10 +107,10 @@
 
             <table>
               <tr class="slide-description-numbers">
-                <td class="slide-description-column1" aria-labelledby="column1">48 часов</td>
+                <td class="slide-description-column1" aria-labelledby="comment-product2-battery">48 часов</td>
               </tr>
               <tr class="slide-description-numbers-comment">
-                <td id="column1">Без подзарядки</td>
+                <td id="comment-product2-battery">Без подзарядки</td>
               </tr>
             </table>
           </div>
@@ -129,12 +129,12 @@
 
             <table>
               <tr class="slide-description-numbers">
-                <td class="slide-description-column1" aria-labelledby="column1">800 м</td>
-                <td class="slide-description-column2" aria-labelledby="column2">50 м</td>
+                <td class="slide-description-column1" aria-labelledby="comment-product1-distance">800 м</td>
+                <td class="slide-description-column2" aria-labelledby="comment-product1-radius">50 м</td>
               </tr>
               <tr class="slide-description-numbers-comment">
-                <td id="column1">Дальность полета</td>
-                <td id="column2">Радиус поражения</td>
+                <td id="comment-product1-distance">Дальность полета</td>
+                <td id="comment-product1-radius">Радиус поражения</td>
               </tr>
             </table>
           </div>
@@ -147,27 +147,27 @@
 
       <ul class="products-list">
         <li class="product">
-          <a href="#"><img src="img/content/popular-virtual-reality.svg" alt="virtual-reality" class="product-image"/>Виртуальная реальность</a>
+          <a href="#" class="product-link product-link-virtual">Виртуальная реальность</a>
         </li>
 
         <li class="product">
-          <a href="#"><img src="img/content/popular-monopods.svg" alt="monopods" class="product-image"/>Моноподы для селфи</a>
+          <a href="#" class="product-link product-link-monopods">Моноподы для селфи</a>
         </li>
 
         <li class="product">
-          <a href="#"><img src="img/content/popular-camera.svg" alt="camera" class="product-image"/>Экшн-камеры</a>
+          <a href="#" class="product-link product-link-camera">Экшн-камеры</a>
         </li>
 
         <li class="product">
-          <a href="#"><img src="img/content/popular-bracelet.svg" alt="bracelet" class="product-image"/>Фитнес-браслеты</a>
+          <a href="#" class="product-link product-link-bracelet">Фитнес-браслеты</a>
         </li>
 
         <li class="product">
-          <a href="#"><img src="img/content/popular-smart-watch.svg" alt="smart-watch" class="product-image"/>Умные часы</a>
+          <a href="#" class="product-link product-link-smart-watch">Умные часы</a>
         </li>
 
         <li class="product">
-          <a href="#"><img src="img/content/popular-quadrocopters.svg" alt="quadrocopters" class="product-image"/>Квадрокоптеры</a>
+          <a href="#" class="product-link product-link-quadrocopters">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
@@ -176,11 +176,11 @@
       <div class="container">
         <h2 class="visually-hidden">Услуги</h2>
 
-        <div class="services-list">
-          <button class="services-item button services-item-active" type="button" onclick="currentSlideServices(1)">Доставка</button>
-          <button class="services-item button" type="button" onclick="currentSlideServices(2)">Гарантия</button>
-          <button class="services-item button" type="button" onclick="currentSlideServices(3)">Кредит</button>
-        </div>
+        <ul class="services-list">
+          <li><button class="services-item button services-item-active" type="button">Доставка</button></li>
+          <li><button class="services-item button" type="button">Гарантия</button></li>
+          <li><button class="services-item button" type="button">Кредит</button></li>
+        </ul>
 
         <ul class="services-slides">
           <li class="services-slide services-slide1">
@@ -247,7 +247,7 @@
           бывает.</p>
 
         <p class="contacts-map">
-          <a href="https://www.google.com/maps/" target="_blank"><img src="img/content/map.png" width="100" height="50" alt="Адрес на карте - ул. Строителей 15, Москва"></a>
+          <a href="https://www.google.com/maps/" target="_blank"><img src="img/content/map.png" width="560" height="222" alt="Адрес на карте - ул. Строителей 15, Москва"></a>
         </p>
         <a class="button" href="write_to_us.html">Напишите нам</a>
       </section>
@@ -264,33 +264,9 @@
         </a>
 
         <ul class="container-row-1-links">
-          <li>
-            <a href="login.html" class="link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
-                <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
-              </svg>
-              Войти
-            </a>
-          </li>
-
-          <li>
-            <a href="compare.html" class="link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-                <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z" />
-              </svg>
-              Сравнить
-            </a>
-          </li>
-
-          <li>
-            <a href="basket.html" class="link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z" />
-                <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z" />
-              </svg>
-              Корзина
-            </a>
-          </li>
+          <li><a href="login.html" class="login-link">Войти</a></li>
+          <li><a href="#" class="compare-link">Сравнить</a></li>
+          <li><a href="#" class="basket-link">Корзина</a></li>
         </ul>
       </div>
 
@@ -341,5 +317,35 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal-letter">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="letter-item-container">
+        <p class="letter-item">
+          <label for="letter-name">Ваше имя:</label>
+          <input id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="letter-item">
+          <label for="letter-email">Ваш e-mail:</label>
+          <input id="letter-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="letter-item">
+        <label for="letter-text">Текст письма:</label>
+        <textarea id="letter-text" name="text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+      <img src="img/content/map-big.png" width="960" height="559"
+        alt="Офис интернет-магазина по адресу ул. Строителей 15, Москва">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 </html>
