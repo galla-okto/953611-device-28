@@ -620,7 +620,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container-row-1-links li {
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .footer-link {
@@ -676,6 +676,10 @@ input[type="radio"].visually-hidden {
 
 .basket-footer-link::before {
   background-image: url("../img/icons/cart-yellow.svg");
+}
+
+.footer-link .exit {
+  padding: 0;
 }
 
 .container-row-2 {
