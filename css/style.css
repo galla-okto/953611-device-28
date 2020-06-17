@@ -578,30 +578,40 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-current {
-  display: block;
+  display: grid;
+  grid-template-columns: 600px 560px;
 }
 
 .slide-picture {
-  position: absolute;
+  min-height: 500px;
 
-  left: 89px;
-  top: 7px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*left: 89px;
+  top: 7px;*/
 }
 
 .slide-details {
   padding: 0;
-  padding-left: 599px;
   padding-top: 88px;
   margin: 0;
 
   width: 560px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
 
   position: relative;
 }
 
 .slide-details::before {
   top: 45px;
-  left: 600px;
+  left: 0;
 
   width: 100px;
 
@@ -636,12 +646,14 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.6px;
+
+  position: relative;
 }
 
 .slide-comment {
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 
-  line-height: 25px;
+  line-height: 20px;
 }
 
 .slide-details .button {
@@ -667,7 +679,6 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-details .slide-description-numbers {
-  margin-bottom: 20px;
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -683,20 +694,27 @@ input[type="radio"].visually-hidden {
   line-height: 15px;
 }
 
+.slide-details .slide-description-numbers-comment td {
+  padding-top: 10px;
+}
+
 .slider-controls {
   position: absolute;
 
   bottom: 165px;
   right: 85px;
 
-  width: 75px;
+  max-width: 100px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .slider-controls button {
   padding: 0;
+  margin: 0;
+  margin-left: 20px;
+
   width: 12px;
   height: 12px;
 
@@ -711,14 +729,12 @@ input[type="radio"].visually-hidden {
 
 .slider-controls .current {
   background-image: url("../img/icons/slider-button.svg");
-  background-size: cover;
-  background-position: center;
 }
 
 .products-list {
   padding: 0;
   margin: 0;
-  margin-top: 280px;
+  margin-top: 290px;
   margin-bottom: 30px;
 
   display: flex;
@@ -734,13 +750,13 @@ input[type="radio"].visually-hidden {
   width: 160px;
 }
 
-.products-list li:last-child {
+.products-list li:nth-child(6n) {
   margin-right: 0;
 }
 
 .product-link {
   padding: 0;
-  padding-top: 25px;
+  padding-top: 200px;
   margin: 0;
 
   width: 160px;
@@ -750,11 +766,14 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 22px;
 
+  /*background-color: linear-gradient(var(--special-yellow) 160px, var(--basic-white) 0);*/
+
   position: relative;
 }
 
 .product-link:active {
-  opacity: 0.3;
+  /*opacity: 0.3;*/
+  color: rgba(0,0,0,0.3);
 }
 
 .product-link::before {
@@ -764,7 +783,7 @@ input[type="radio"].visually-hidden {
   height: 160px;
 
   position: absolute;
-  top: -170px;
+  top: 0;
   left: 0;
 
   background-color: var(--special-yellow);
@@ -773,7 +792,13 @@ input[type="radio"].visually-hidden {
 }
 
 .product-link:hover::before {
-  background-color: var(--special-yellow-dark);
+  /*background-color: var(--special-yellow-dark);*/
+  background: linear-gradient(to bottom, var(--special-yellow-dark) 160px, var(--basic-white) 0);
+}
+
+.product-link:focus::before,
+.product-link:active::before {
+  opacity: 0.3;
 }
 
 .product-link-virtual::before {
@@ -868,6 +893,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
 
+  min-height: 200px;
+
   display: none;
 
   background-repeat: no-repeat;
@@ -898,7 +925,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
 
-  width: 500px;
+  width: 575px;
 
   line-height: 28px;
   letter-spacing: 0.1em;
@@ -906,7 +933,7 @@ input[type="radio"].visually-hidden {
 
 .services-slide1 {
   background-image: url("../img/decor/delivery.svg");
-  background-position: 555px 25px;
+  background-position: 555px 10px;
 }
 
 .services-slide2 {
@@ -940,7 +967,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.partner-list li:last-child {
+.partner-list li:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -983,6 +1010,8 @@ input[type="radio"].visually-hidden {
 .firm-contacts p {
   margin: 0;
   margin-bottom: 30px;
+
+  line-height: 28px;
 }
 
 .firm-contacts .button {
