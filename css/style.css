@@ -579,7 +579,8 @@ input[type="radio"].visually-hidden {
 
 .slide-current {
   display: grid;
-  grid-template-columns: 600px 560px;
+  grid-template-columns: 580px 560px;
+  column-gap: 20px;
 }
 
 .slide-picture {
@@ -591,9 +592,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /*left: 89px;
-  top: 7px;*/
 }
 
 .slide-details {
@@ -678,7 +676,7 @@ input[type="radio"].visually-hidden {
   width: 138px;
 }
 
-.slide-details .slide-description-numbers {
+.slide-description-numbers {
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -686,7 +684,7 @@ input[type="radio"].visually-hidden {
   line-height: 42px;
 }
 
-.slide-details .slide-description-numbers-comment {
+.slide-description-numbers-comment {
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -694,7 +692,7 @@ input[type="radio"].visually-hidden {
   line-height: 15px;
 }
 
-.slide-details .slide-description-numbers-comment td {
+.slide-description-numbers-comment td {
   padding-top: 10px;
 }
 
@@ -704,10 +702,11 @@ input[type="radio"].visually-hidden {
   bottom: 165px;
   right: 85px;
 
-  max-width: 100px;
+  max-width: 200px;
 
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .slider-controls button {
@@ -734,7 +733,6 @@ input[type="radio"].visually-hidden {
 .products-list {
   padding: 0;
   margin: 0;
-  margin-top: 290px;
   margin-bottom: 30px;
 
   display: flex;
@@ -761,19 +759,16 @@ input[type="radio"].visually-hidden {
 
   width: 160px;
 
+  display: block;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
 
-  /*background-color: linear-gradient(var(--special-yellow) 160px, var(--basic-white) 0);*/
+  background: linear-gradient(var(--special-yellow) 160px, var(--basic-white) 0);
 
   position: relative;
-}
-
-.product-link:active {
-  /*opacity: 0.3;*/
-  color: rgba(0,0,0,0.3);
 }
 
 .product-link::before {
@@ -786,14 +781,17 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 0;
 
-  background-color: var(--special-yellow);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.product-link:hover::before {
-  /*background-color: var(--special-yellow-dark);*/
+.product-link:hover {
   background: linear-gradient(to bottom, var(--special-yellow-dark) 160px, var(--basic-white) 0);
+}
+
+.product-link:focus,
+.product-link:active {
+  color: var(--color-dark-text-focus);
 }
 
 .product-link:focus::before,
