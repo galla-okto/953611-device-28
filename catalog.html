@@ -66,15 +66,13 @@
       </ul>
     </div>
 
-    <div class="wrap">
-      <div class="catalog-columns">
+    <div class="catalog-grid">
+        <section class="filter">
+          <h2 class="filter-title">Фильтр:</h2>
 
-        <section class="filters">
-            <h2 class="filters-title">Фильтр:</p>
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-
-              <fieldset class="filter-item">
+            <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
                 <div class="range-filter">
                   <div class="range-controls">
@@ -89,9 +87,9 @@
                     <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
                   </div>
                 </div>
-              </fieldset>
+            </fieldset>
 
-              <fieldset class="filter-item filter-item2">
+            <fieldset class="filter-item">
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter-option">
@@ -120,9 +118,9 @@
                     <label for="pink">Розовый</label>
                   </li>
                 </ul>
-              </fieldset>
+            </fieldset>
 
-              <fieldset class="filter-item">
+            <fieldset class="filter-item">
                 <legend>Bluetooth</legend>
                 <ul>
                   <li class="filter-option">
@@ -136,28 +134,28 @@
                     <label for="filter-available-no">No</label>
                   </li>
                 </ul>
-              </fieldset>
-              <button class="filter-button button" type="submit">Отправить</button>
-            </form>
+            </fieldset>
 
+            <button class="filter-button button" type="submit">Отправить</button>
+          </form>
+        </section>
+
+        <section class="sort">
+          <h3 class="sort-title">Сортировка:</p>
+          <ul class="sort-list">
+            <li class="sort-item"><a href="#">По цене</a></li>
+            <li class="sort-item"><a href="#">По типу</a></li>
+            <li class="sort-item"><a href="#">По популярности</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#" class="up">Up</a></li>
+            <li><a href="#" class="down">Down</a></li>
+          </ul>
         </section>
 
         <section class="catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
-
-          <section class="sorting">
-            <h3 class="sorting-title">Сортировка:</p>
-            <ul class="sorting-list">
-              <li class="sorting-item"><a href="#">По цене</a></li>
-              <li class="sorting-item"><a href="#">По типу</a></li>
-              <li class="sorting-item"><a href="#">По популярности</a></li>
-            </ul>
-
-            <ul>
-              <li><a href="#" class="up">Up</a></li>
-              <li><a href="#" class="down">Down</a></li>
-            </ul>
-          </section>
 
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -167,7 +165,7 @@
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item-image">
-                  <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
+                  <img src="img/content/item-amateur-selfie-stick.png" width="360" height="380" alt="Любительская селфи-палка">
                 </div>
               </div>
 
@@ -186,7 +184,7 @@
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item-image">
-                  <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <img src="img/content/item-prof-selfie-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">
                 </div>
               </div>
 
@@ -205,7 +203,7 @@
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item-image">
-                  <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <img src="img/content/item-unsinkable-selfie-stick.png" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </div>
               </div>
 
@@ -224,7 +222,7 @@
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item-image">
-                  <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                  <img src="img/content/item-follow-me-selfie-stick.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </div>
               </div>
 
@@ -236,22 +234,21 @@
               </div>
             </li>
           </ul>
+        </section>
 
-          <section class="pagination">
-            <h2 class="visually-hidden">Страницы</h1>
+        <section class="pagination">
+          <h2 class="visually-hidden">Страницы</h1>
 
-            <ul class="pagination-container">
-              <li><a href="#" class="page-back">Назад</a></li>
-              <li><a class="page-number page-number-active">1</a></li>
-              <li><a href="#" class="page-number">2</a></li>
-              <li><a href="#" class="page-number">3</a></li>
-              <li><a href="#" class="page-forward">Вперед</a></li>
-            </ul>
-          </section>
+          <ul class="pagination-container">
+            <li><a href="#" class="page-back">Назад</a></li>
+            <li><a class="page-number page-number-active">1</a></li>
+            <li><a href="#" class="page-number">2</a></li>
+            <li><a href="#" class="page-number">3</a></li>
+            <li><a href="#" class="page-forward">Вперед</a></li>
+          </ul>
         </section>
 
       </div>
-    </div>
   </main>
 
   <footer class="main-footer">
