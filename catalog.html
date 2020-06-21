@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="inner-page">
+<body class="page-body inner-page">
   <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -72,8 +72,8 @@
 
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-            <fieldset class="filter-item">
-                <legend>Стоимость:</legend>
+            <fieldset class="filter-item striped">
+                <legend>Стоимость</legend>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -89,7 +89,7 @@
                 </div>
             </fieldset>
 
-            <fieldset class="filter-item">
+            <fieldset class="filter-item striped">
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter-option">
@@ -120,7 +120,7 @@
                 </ul>
             </fieldset>
 
-            <fieldset class="filter-item">
+            <fieldset class="filter-item striped">
                 <legend>Bluetooth</legend>
                 <ul>
                   <li class="filter-option">
@@ -141,31 +141,34 @@
         </section>
 
         <section class="sort">
-          <h3 class="sort-title">Сортировка:</p>
-          <ul class="sort-list">
-            <li class="sort-item"><a href="#">По цене</a></li>
-            <li class="sort-item"><a href="#">По типу</a></li>
-            <li class="sort-item"><a href="#">По популярности</a></li>
-          </ul>
+          <div class="sort-wrap">
+            <h3 class="sort-title">Сортировка:</h3>
 
-          <ul>
-            <li><a href="#" class="up">Up</a></li>
-            <li><a href="#" class="down">Down</a></li>
-          </ul>
+            <ul class="sort-list">
+              <li class="sort-item sort-item-current"><a href="#">По цене</a></li>
+              <li class="sort-item"><a href="#">По типу</a></li>
+              <li class="sort-item"><a href="#">По популярности</a></li>
+            </ul>
+
+            <ul class="up-down-list">
+              <li><a href="#" class="up-down-item up"></a></li>
+              <li><a href="#" class="up-down-item down"></a></li>
+            </ul>
+          </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog-goods">
           <h2 class="visually-hidden">Каталог товаров</h2>
 
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="catalog-item-image-actions">
+                <div class="catalog-item-image">
+                  <img src="img/content/item-amateur-selfie-stick.png" width="360" height="380" alt="Любительская селфи-палка">
+                </div>
                 <div class="actions">
                   <a class="button add-to-basket" href="#">В корзину</a>
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/content/item-amateur-selfie-stick.png" width="360" height="380" alt="Любительская селфи-палка">
                 </div>
               </div>
 
@@ -179,12 +182,12 @@
 
             <li class="catalog-item">
               <div class="catalog-item-image-actions">
+                <div class="catalog-item-image">
+                  <img src="img/content/item-prof-selfie-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                </div>
                 <div class="actions">
                   <a class="button add-to-basket" href="#">В корзину</a>
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/content/item-prof-selfie-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">
                 </div>
               </div>
 
@@ -198,12 +201,12 @@
 
             <li class="catalog-item">
               <div class="catalog-item-image-actions">
+                <div class="catalog-item-image">
+                  <img src="img/content/item-unsinkable-selfie-stick.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                </div>
                 <div class="actions">
                   <a class="button add-to-basket" href="#">В корзину</a>
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/content/item-unsinkable-selfie-stick.png" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </div>
               </div>
 
@@ -215,14 +218,15 @@
               </div>
             </li>
 
-            <li class="catalog-item catalog-item-new">
+            <li class="catalog-item">
+              <div class="flag-new"></div>
               <div class="catalog-item-image-actions">
+                <div class="catalog-item-image">
+                  <img src="img/content/item-follow-me-selfie-stick.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                </div>
                 <div class="actions">
                   <a class="button add-to-basket" href="#">В корзину</a>
                   <a class="add-to-compare" href="#">Добавить к сравнению</a>
-                </div>
-                <div class="catalog-item-image">
-                  <img src="img/content/item-follow-me-selfie-stick.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </div>
               </div>
 
