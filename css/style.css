@@ -1410,14 +1410,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icons/radio-on.svg");
 }
 
-.filter-input-radio:not(.disabled) + label:hover::before,
-.filter-input-radio:checked:not(.disabled) + label:focus::before,
-.filter-input-radio:checked:not(.disabled) + label:active::before {
+.filter-input-radio:not(:disabled) + label:hover::before,
+.filter-input-radio:checked:not(:disabled) + label:focus::before,
+.filter-input-radio:checked:not(:disabled) + label:active::before {
   opacity: 0.6;
 }
 
-.filter-input-radio:not(.checked):not(.disabled) + label:focus::before,
-.filter-input-radio:not(.checked):not(.disabled) + label:active::before {
+.filter-input-radio:not(.checked):not(:disabled) + label:focus::before,
+.filter-input-radio:not(.checked):not(:disabled) + label:active::before {
   opacity: 1;
 }
 
@@ -1536,6 +1536,7 @@ input[type="radio"].visually-hidden {
   height: 33px;
 
   display: inline-block;
+  vertical-align: top;
 
   background-color: transparent;
   background-position: center center;
@@ -1607,6 +1608,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-image-actions {
   position: relative;
+
+  margin-bottom: 20px;
 
   text-align: center;
 }
@@ -1734,6 +1737,14 @@ input[type="radio"].visually-hidden {
 
 .page-side {
   padding: 0;
+  margin: 0;
+
+  display: block;
+}
+
+.page-back,
+.page-forward {
+  padding: 0;
   padding-left: 30px;
   padding-top: 25px;
   padding-right: 30px;
@@ -1743,13 +1754,14 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.page-side:hover {
+.page-back:hover,
+.page-forward:hover {
   background-color: var(--back-page-parts);
 }
 
-.page-side:focus,
-.page-side:active {
-  background-color: var(--color-dark-text-focus);
+.page-back:focus,
+.page-forward:active {
+  color: var(--color-dark-text-focus);
 }
 
 .page-number {
@@ -1773,16 +1785,15 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.page-number:nth-of-type(2) {
+.page-side:last-child {
   margin-left: auto;
 }
 
-.page-number:nth-of-type(4) {
+.page-side:first-child {
   margin-right: auto;
 }
 
 .page-number-link-active {
-  color: inherit;
   opacity: 1;
 }
 
