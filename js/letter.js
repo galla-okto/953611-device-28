@@ -21,11 +21,11 @@ contactsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   letterPopup.classList.add("modal-show");
 
-  if ((storageLogin) && (storageEmail)) {
+  if (storageLogin && storageEmail) {
     letterName.value = storageLogin;
     letterEmail.value = storageEmail;
     letterText.focus();
-  } else if ((storageLogin) && !(storageEmail)) {
+  } else if (storageLogin && !storageEmail) {
     letterName.value = storageLogin;
     letterEmail.focus();
   } else {
