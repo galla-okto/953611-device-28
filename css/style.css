@@ -2274,8 +2274,6 @@ input[type="radio"].visually-hidden {
 }
 
 .letter-form button {
-  margin-top: 22px;
-
   width: 200px;
 
   background-color: var(--basic-white);
