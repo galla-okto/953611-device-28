@@ -72,68 +72,77 @@
 
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-            <fieldset class="filter-item striped">
-                <legend>Стоимость</legend>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+            <fieldset class="filter-item">
+              <div class="filter-item-name">
+                <h3>Стоимость</h3>
+              </div>
+
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <div class="price-controls">
-                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
-                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
+                <div class="price-controls">
+                  <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до<input name="max-price" type="text" value="5000"></label>
+                </div>
+              </div>
             </fieldset>
 
-            <fieldset class="filter-item striped">
-                <legend>Цвет</legend>
-                <ul>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black"
-                      id="black" checked>
-                    <label for="black">Черный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white"
-                      id="white">
-                    <label for="white">Белый</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue"
-                      id="blue" checked>
-                    <label for="blue">Синий</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red"
-                      id="red" checked>
-                    <label for="red">Красный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink"
-                      id="pink" disabled>
-                    <label for="pink">Розовый</label>
-                  </li>
-                </ul>
+            <fieldset class="filter-item">
+              <div class="filter-item-name">
+                <h3>Цвет</h3>
+              </div>
+
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black"
+                    id="black" checked>
+                  <label for="black">Черный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white"
+                    id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue"
+                    id="blue" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red"
+                    id="red" checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink"
+                    id="pink" disabled>
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
             </fieldset>
 
-            <fieldset class="filter-item striped">
-                <legend>Bluetooth</legend>
-                <ul>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available"
-                      value="yes" id="filter-available-yes" checked>
-                    <label for="filter-available-yes">Yes</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available"
-                      value="no" id="filter-available-no">
-                    <label for="filter-available-no">No</label>
-                  </li>
-                </ul>
+            <fieldset class="filter-item">
+              <div class="filter-item-name">
+                <h3>Bluetooth</h3>
+              </div>
+
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available"
+                    value="yes" id="filter-available-yes" checked>
+                  <label for="filter-available-yes">Есть</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="available"
+                    value="no" id="filter-available-no">
+                  <label for="filter-available-no">Нет</label>
+                </li>
+              </ul>
             </fieldset>
 
             <button class="filter-button button" type="submit">Показать</button>
