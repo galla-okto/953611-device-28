@@ -559,7 +559,7 @@ input[type="radio"].visually-hidden {
   top: 100%;
   left: -60px;
 
-  width: 540px;
+  width: 1040px;
 
   padding: 0;
   padding-left: 60px;
@@ -574,6 +574,7 @@ input[type="radio"].visually-hidden {
 .main-menu:first-child:hover .catalog-menu,
 .main-menu:first-child:focus-within .catalog-menu {
   display: flex;
+  justify-content: flex-start;
 }
 
 .catalog-menu-list {
@@ -582,7 +583,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-top: 12px;
-  margin-right: auto;
 
   font-weight: 300;
   font-size: 15px;
@@ -1770,7 +1770,7 @@ input[type="radio"].visually-hidden {
 
 .pagination {
   padding: 0;
-  padding-top: 25px;
+  padding-top: 28px;
   padding-bottom: 78px;
   padding-left: 70px;
   margin: 0;
@@ -1905,11 +1905,15 @@ input[type="radio"].visually-hidden {
   max-width: 600px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .container-row-1-links li {
   margin-left: 45px;
+}
+
+.container-row-1-links li:nth-child(2) {
+  margin-left: 5px;
 }
 
 .footer-link {
