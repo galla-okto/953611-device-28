@@ -1,24 +1,21 @@
-'use strict';
+var slidesServices = document.querySelectorAll(".services-slide");
+var buttonServices = document.querySelectorAll(".services-item");
+var i=0;
+var j=0;
+var buttonServicesClickHandler = function(evt) {
+  evt.preventDefault();
 
-var slideIndexServices = 1;
-showSlidesServices(slideIndexServices);
+  for (j = 0; j < slides.length; j++) {
+    slidesServices[j].classList.remove("services-slide-current");
+  }
+  slidesServices[evt.target.value].classList.add("services-slide-current");
 
-function currentSlideServices(n) {
-  showSlidesServices(slideIndexServices = n);
+  for (j = 0; j < dots.length; j++) {
+    buttonServices[j].classList.remove("services-item-active");
+  }
+  buttonServices[evt.target.value].classList.add("services-item-active");
 }
 
-function showSlidesServices(n) {
-  var i;
-  var slides = document.getElementsByClassName("services-slide");
-  var dots = document.getElementsByClassName("services-item");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndexServices = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" services-item-active", "");
-  }
-  slides[slideIndexServices-1].style.display = "block";
-  dots[slideIndexServices-1].className += " services-item-active";
+for (i = 0; i < dots.length; i++) {
+  buttonServices[i].addEventListener("click", buttonServicesClickHandler);
 }

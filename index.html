@@ -79,9 +79,9 @@
 
             <table class="slide-description">
               <tr class="slide-description-numbers">
-                <td class="slide-description-column1" aria-labelledby="comment-product1-length">8,5 м</td>
-                <td class="slide-description-column2" aria-labelledby="comment-product1-weight">5 кг</td>
-                <td class="slide-description-column1" aria-labelledby="comment-product1-material">Карбон</td>
+                <td class="slide-description-length" aria-labelledby="comment-product1-length">8,5 м</td>
+                <td class="slide-description-weight" aria-labelledby="comment-product1-weight">5 кг</td>
+                <td class="slide-description-material" aria-labelledby="comment-product1-material">Карбон</td>
               </tr>
               <tr class="slide-description-numbers-comment">
                 <td id="comment-product1-length">Длина палки</td>
@@ -102,14 +102,14 @@
 
             <h3>Худеем<br>правильно!</h3>
 
-            <p class="slide-comment">Мотивирующие фитнес-браслеты помогут найти в себе силы
+            <p class="slide-comment">Мотивирующие фитнес-браслеты помогут найти в себе силы</br>
               не пропускать занятия и соблюдать диету.</p>
 
             <a class="button" href="#">Подробнее</a>
 
-            <table>
+            <table class="slide-description">
               <tr class="slide-description-numbers">
-                <td class="slide-description-column1" aria-labelledby="comment-product2-battery">48 часов</td>
+                <td class="slide-description-battery" aria-labelledby="comment-product2-battery">48 часов</td>
               </tr>
               <tr class="slide-description-numbers-comment">
                 <td id="comment-product2-battery">Без подзарядки</td>
@@ -133,10 +133,10 @@
 
             <a class="button" href="#">Подробнее</a>
 
-            <table>
+            <table class="slide-description">
               <tr class="slide-description-numbers">
-                <td class="slide-description-column1" aria-labelledby="comment-product3-distance">800 м</td>
-                <td class="slide-description-column2" aria-labelledby="comment-product3-radius">50 м</td>
+                <td class="slide-description-distance" aria-labelledby="comment-product3-distance">800 м</td>
+                <td class="slide-description-radius" aria-labelledby="comment-product3-radius">50 м</td>
               </tr>
               <tr class="slide-description-numbers-comment">
                 <td id="comment-product3-distance">Дальность полета</td>
@@ -148,9 +148,9 @@
       </ul>
 
       <div class="slider-controls">
-        <button class="dot current" type="button" aria-label="Первый слайд"></button>
-        <button class="dot" type="button" aria-label="Второй слайд"></button>
-        <button class="dot" type="button" aria-label="Третий слайд"></button>
+        <button class="dot current" type="button" aria-label="Первый слайд" value="0"></button>
+        <button class="dot" type="button" aria-label="Второй слайд" value="1"></button>
+        <button class="dot" type="button" aria-label="Третий слайд" value="2"></button>
       </div>
     </section>
 
@@ -190,9 +190,9 @@
 
         <div class="services-list-slides">
           <ul class="services-list">
-            <li><button class="services-item button services-item-active" type="button">Доставка</button></li>
-            <li><button class="services-item button" type="button">Гарантия</button></li>
-            <li><button class="services-item button" type="button">Кредит</button></li>
+            <li><button class="services-item button services-item-active" type="button" value="0">Доставка</button></li>
+            <li><button class="services-item button" type="button" value="1">Гарантия</button></li>
+            <li><button class="services-item button" type="button" value="2">Кредит</button></li>
           </ul>
 
           <ul class="services-slides">
@@ -356,5 +356,7 @@
 
   <script src="js/letter.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/slider_services.js"></script>
 </body>
 </html>

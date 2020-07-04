@@ -1,24 +1,21 @@
-'use strict';
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var i=0;
+var j=0;
+var buttonSliderClickHandler = function(evt) {
+  evt.preventDefault();
 
-var slideIndex = 1;
-showSlides(slideIndex);
+  for (j = 0; j < slides.length; j++) {
+    slides[j].classList.remove("slide-current");
+  }
+  slides[evt.target.value].classList.add("slide-current");
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+  for (j = 0; j < dots.length; j++) {
+    dots[j].classList.remove("current");
+  }
+  dots[evt.target.value].classList.add("current");
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" current", "");
-  }
-  slides[slideIndex-1].className += " slide-current";
-  dots[slideIndex-1].className += " current";
+for (i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", buttonSliderClickHandler);
 }

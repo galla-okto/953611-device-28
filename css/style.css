@@ -597,11 +597,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-  min-height: 510px;
+  min-height: 528px;
 
   padding: 0;
   margin-top: 0;
-  margin-bottom: 100px;
+  margin-bottom: 82px;
 
   background: linear-gradient(var(--special-yellow) 135px,
                               var(--basic-white) 0);
@@ -648,6 +648,10 @@ input[type="radio"].visually-hidden {
   padding-top: 24px;
 }
 
+.slide-3 .slide-picture {
+  padding-top: 5px;
+}
+
 .slide-details {
   padding: 0;
   padding-top: 100px;
@@ -675,7 +679,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   position: absolute;
-  right: 46px;
+  right: 48px;
   top: 11px;
 
   font-family: "Gilroy", Arial, sans-serif;
@@ -723,14 +727,31 @@ input[type="radio"].visually-hidden {
 
   border: 0;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.slide-description-column1 {
-  width: 157px;
+.slide-description-length {
+  width: 158px;
 }
 
-.slide-description-column2 {
-  width: 138px;
+.slide-description-weight {
+  width: 135px;
+}
+
+.slide-description-material {
+  width: 147px;
+}
+
+.slide-description-battery {
+  width: 182px;
+}
+
+.slide-description-distance {
+  width: 159px;
+}
+
+.slide-description-radius {
+  width: 137px;
 }
 
 .slide-description-numbers {
@@ -758,7 +779,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
 
-  bottom: 152px;
+  bottom: 170px;
   right: 85px;
 
   max-width: 200px;
@@ -946,7 +967,7 @@ input[type="radio"].visually-hidden {
 .services-slides {
   padding: 0;
   padding-left: 117px;
-  padding-top: 64px;
+  padding-top: 50px;
   margin: 0;
 }
 
@@ -971,7 +992,7 @@ input[type="radio"].visually-hidden {
 
 .services-slide-description h3 {
   padding: 0;
-  padding-top: 5px;
+  padding-top: 19px;
   margin: 0;
   margin-bottom: 40px;
 
@@ -995,17 +1016,17 @@ input[type="radio"].visually-hidden {
 
 .services-slide1 {
   background-image: url("../img/decor/delivery.svg");
-  background-position: 620px 5px;
+  background-position: 620px 20px;
 }
 
 .services-slide2 {
   background-image: url("../img/decor/warranty.svg");
-  background-position: 558px 0;
+  background-position: 605px 4px;
 }
 
 .services-slide3 {
   background-image: url("../img/decor/credit.svg");
-  background-position: 520px 0;
+  background-position: 595px 0;
 }
 
 .partner-list {
@@ -1646,7 +1667,7 @@ input[type="radio"].visually-hidden {
   grid-template-columns: 360px 360px;
   grid-auto-rows: min-content;
   grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-row-gap: 46px;
 }
 
 .catalog-item {
@@ -1658,7 +1679,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
 
-  top: 25px;
+  top: 30px;
   right: 25px;
 
   width: 62px;
@@ -1672,7 +1693,7 @@ input[type="radio"].visually-hidden {
 .catalog-item-image-actions {
   position: relative;
 
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   text-align: center;
 }
@@ -1735,6 +1756,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   width: 279px;
+
+  line-height: 22px;
 }
 
 .catalog-item-container a {
@@ -1770,8 +1793,8 @@ input[type="radio"].visually-hidden {
 
 .pagination {
   padding: 0;
-  padding-top: 28px;
-  padding-bottom: 78px;
+  padding-top: 40px;
+  padding-bottom: 77px;
   padding-left: 70px;
   margin: 0;
 
@@ -1912,10 +1935,6 @@ input[type="radio"].visually-hidden {
   margin-left: 45px;
 }
 
-.container-row-1-links li:nth-child(2) {
-  margin-left: 5px;
-}
-
 .footer-link {
   padding-left: 20px;
 
@@ -1928,6 +1947,10 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   color: var(--color-light-text);
+}
+
+.container-row-1-links .exit {
+  padding-left: 0;
 }
 
 .footer-link::before {
