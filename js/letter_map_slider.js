@@ -84,7 +84,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
 var slides = document.querySelectorAll(".slide");
 var dots = document.querySelectorAll(".dot");
 var i=0;
@@ -106,7 +105,6 @@ var buttonSliderClickHandler = function(evt) {
 for (i = 0; i < dots.length; i++) {
   dots[i].addEventListener("click", buttonSliderClickHandler);
 }
-
 
 var slidesServices = document.querySelectorAll(".services-slide");
 var buttonServices = document.querySelectorAll(".services-item");
