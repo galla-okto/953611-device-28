@@ -1320,7 +1320,7 @@ input[type="radio"].visually-hidden {
 .filter-item {
   padding: 0;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   border: none;
 }
@@ -1437,7 +1437,7 @@ input[type="radio"].visually-hidden {
 .filter-option {
   padding: 0;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 .filter-option:last-child {
@@ -1453,7 +1453,10 @@ input[type="radio"].visually-hidden {
 
 .filter-input-checkbox + label {
   padding-left: 40px;
+  padding-top: 2px;
 
+  display: inline-block;
+  vertical-align: top;
   position: relative;
 }
 
@@ -1488,6 +1491,10 @@ input[type="radio"].visually-hidden {
 
 .filter-input-radio + label {
   padding-left: 40px;
+  padding-top: 3px;
+
+  display: inline-block;
+  vertical-align: top;
 
   position: relative;
 }
@@ -1535,7 +1542,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
-  margin-top: 6px;
+  margin-top: 2px;
 
   width: 100%;
 
@@ -1683,9 +1690,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   display: grid;
-  grid-template-columns: 360px 360px;
+  grid-template-columns: 371px 371px;
   grid-auto-rows: min-content;
-  grid-column-gap: 40px;
+  grid-column-gap: 30px;
   grid-row-gap: 46px;
 }
 
@@ -1699,7 +1706,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   top: 30px;
-  right: 25px;
+  right: 40px;
 
   width: 62px;
   height: 62px;
@@ -1711,6 +1718,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-image-actions {
   position: relative;
+
+  max-width: 360px;
 
   margin-bottom: 20px;
 
@@ -1765,15 +1774,16 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
 }
 
 .catalog-item-container h3 {
   padding: 0;
   margin: 0;
+  margin-right: 5px;
 
-  width: 275px;
+  width: 276px;
 
   line-height: 22px;
 }
@@ -2196,7 +2206,7 @@ input[type="radio"].visually-hidden {
 
   margin-left: -480px;
 
-  transform: translateY(-50%);
+  transform: translate(0, -50%);
 
   background-color: var(--basic-white);
 
@@ -2356,26 +2366,26 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(0, -200%);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(0, -30%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(0, -60%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(0, -50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(0, -50%);
   }
 
   10%,
@@ -2383,13 +2393,13 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(5%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-5%, -50%);
   }
 }
