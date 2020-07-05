@@ -498,7 +498,7 @@ input[type="radio"].visually-hidden {
   color: var(--color-dark-text-focus);
 }
 
-.site-navigation li:first-child {
+.site-navigation > li:first-child {
   width: 300px;
 
   margin-right: 240px;
@@ -560,6 +560,7 @@ input[type="radio"].visually-hidden {
   left: -60px;
 
   width: 1040px;
+  min-height: 162px;
 
   padding: 0;
   padding-left: 60px;
@@ -583,6 +584,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-top: 12px;
+  margin-right: 61px;
 
   font-weight: 300;
   font-size: 15px;
@@ -888,6 +890,7 @@ input[type="radio"].visually-hidden {
 
 .product-link-monopods::before {
   background-image: url("../img/content/monopods.svg");
+  background-position: center 26px;
 }
 
 .product-link-camera::before {
@@ -904,6 +907,10 @@ input[type="radio"].visually-hidden {
 
 .product-link-quadrocopters::before {
   background-image: url("../img/content/quadrocopters.svg");
+}
+
+.product-link-bracelet {
+  letter-spacing: 0;
 }
 
 .services {
@@ -961,13 +968,15 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item-active:hover {
-  color: var(--basic-black);
+  color: var(--special-yellow-dark);
+
+  background-color: var(--basic-black);
 }
 
 .services-slides {
   padding: 0;
   padding-left: 117px;
-  padding-top: 50px;
+  padding-top: 52px;
   margin: 0;
 }
 
@@ -1072,7 +1081,7 @@ input[type="radio"].visually-hidden {
 
 .firm-contacts h2 {
   padding: 0;
-  padding-top: 57px;
+  padding-top: 58px;
   margin: 0;
   margin-bottom: 40px;
 
@@ -1108,6 +1117,10 @@ input[type="radio"].visually-hidden {
 
 .about_firm {
   width: 495px;
+}
+
+.about_firm p {
+  padding-right: 22px;
 }
 
 .transport-firm-list {
@@ -1303,7 +1316,7 @@ input[type="radio"].visually-hidden {
 .filter-item {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   border: none;
 }
@@ -1369,7 +1382,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls {
-  margin-top: 5px;
+  margin-top: 7px;
   font-size: 0;
 }
 
@@ -1383,12 +1396,14 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0;
 }
 
 .price-controls input {
-  padding-left: 8px;
+  margin: 0;
+  padding-left: 3px;
   padding-top: 10px;
-  padding-right: 8px;
+  padding-right: 0;
   padding-bottom: 10px;
 
   width: 40px;
@@ -1422,7 +1437,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option:last-child {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .filter-option + label {
@@ -1516,7 +1531,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
-  margin-top: 12px;
+  margin-top: 6px;
 
   width: 100%;
 
@@ -1651,7 +1666,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-top: 70px;
-  margin-left: 70px;
+  margin-left: 72px;
 
   grid-row-start: 2;
   grid-row-end: -2;
@@ -1702,7 +1717,7 @@ input[type="radio"].visually-hidden {
   right: 0;
 
   position: absolute;
-  top: 170px;
+  top: 177px;
   left: 0;
 
   opacity: 0;
@@ -1755,7 +1770,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
 
-  width: 279px;
+  width: 275px;
 
   line-height: 22px;
 }
@@ -2261,7 +2276,7 @@ input[type="radio"].visually-hidden {
 }
 
 .letter-item textarea {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;

@@ -86,44 +86,47 @@ window.addEventListener("keydown", function (evt) {
 
 var slides = document.querySelectorAll(".slide");
 var dots = document.querySelectorAll(".dot");
-var i=0;
-var j=0;
-var buttonSliderClickHandler = function(evt) {
+var dotsCounter = 0;
+var counter = 0;
+var buttonSliderClickHandler = function (evt) {
   evt.preventDefault();
 
-  for (j = 0; j < slides.length; j++) {
-    slides[j].classList.remove("slide-current");
-  }
-  slides[evt.target.value].classList.add("slide-current");
+  var index = evt.target.attributes["data-slide-index"].value;
 
-  for (j = 0; j < dots.length; j++) {
-    dots[j].classList.remove("current");
+  for (counter = 0; counter < slides.length; counter++) {
+    slides[counter].classList.remove("slide-current");
   }
-  dots[evt.target.value].classList.add("current");
+  slides[index].classList.add("slide-current");
+
+  for (counter = 0; counter < dots.length; counter++) {
+    dots[counter].classList.remove("current");
+  }
+  dots[index].classList.add("current");
 }
 
-for (i = 0; i < dots.length; i++) {
-  dots[i].addEventListener("click", buttonSliderClickHandler);
+for (dotsCounter = 0; dotsCounter < dots.length; dotsCounter++) {
+  dots[dotsCounter].addEventListener("click", buttonSliderClickHandler);
 }
 
 var slidesServices = document.querySelectorAll(".services-slide");
 var buttonServices = document.querySelectorAll(".services-item");
-var i=0;
-var j=0;
-var buttonServicesClickHandler = function(evt) {
+var buttonCounter = 0;
+var buttonServicesClickHandler = function (evt) {
   evt.preventDefault();
 
-  for (j = 0; j < slides.length; j++) {
-    slidesServices[j].classList.remove("services-slide-current");
-  }
-  slidesServices[evt.target.value].classList.add("services-slide-current");
+  var index = evt.target.attributes["data-button-index"].value;
 
-  for (j = 0; j < dots.length; j++) {
-    buttonServices[j].classList.remove("services-item-active");
+  for (counter = 0; counter < slides.length; counter++) {
+    slidesServices[counter].classList.remove("services-slide-current");
   }
-  buttonServices[evt.target.value].classList.add("services-item-active");
+  slidesServices[index].classList.add("services-slide-current");
+
+  for (counter = 0; counter < dots.length; counter++) {
+    buttonServices[counter].classList.remove("services-item-active");
+  }
+  buttonServices[index].classList.add("services-item-active");
 }
 
-for (i = 0; i < dots.length; i++) {
-  buttonServices[i].addEventListener("click", buttonServicesClickHandler);
+for (buttonCounter = 0; buttonCounter < dots.length; buttonCounter++) {
+  buttonServices[buttonCounter].addEventListener("click", buttonServicesClickHandler);
 }
