@@ -1924,7 +1924,9 @@ input[type="radio"].visually-hidden {
   color: var(--basic-white);
   background-color: var(--basic-dark);
 
-  padding: 40px 0;
+  padding: 0;
+  padding-top: 36px;
+  padding-bottom: 58px;
 }
 
 .container-row-1 {
@@ -1934,6 +1936,7 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .main-footer-logo path {
@@ -1941,7 +1944,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-logo {
-  margin-top: 25px;
+  margin-top: 28px;
   margin-right: auto;
 }
 
@@ -1964,11 +1967,15 @@ input[type="radio"].visually-hidden {
 }
 
 .container-row-1-links li {
-  margin-left: 45px;
+  margin-left: 42px;
+}
+
+.container-row-1-links .item-exit {
+  margin-left: 23px;
 }
 
 .footer-link {
-  padding-left: 20px;
+  padding-left: 23px;
 
   font-weight: 300;
   line-height: 20px;
@@ -1989,7 +1996,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 4px;
+  top: 6px;
   left: 0;
 
   background-repeat: no-repeat;
@@ -2046,7 +2053,7 @@ input[type="radio"].visually-hidden {
   grid-template-columns: 260px 640px 260px;
 
   align-items: center;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .container-row-2 a {
@@ -2072,7 +2079,7 @@ input[type="radio"].visually-hidden {
 .footer-services-list {
   margin: 0;
   padding: 0;
-  width: 420px;
+  width: 550px;
 
   letter-spacing: 0.2em;
 
@@ -2081,10 +2088,15 @@ input[type="radio"].visually-hidden {
   justify-self: center;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer-services-item {
+  margin: 0;
+  margin-left: 18px;
+  margin-right: 18px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
@@ -2106,7 +2118,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container-row-3::before {
-  top: 15px;
+  top: 20px;
   left: 0;
 
   background-color: var(--symbol-color-footer);
@@ -2169,6 +2181,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo-htmlacademy {
+  margin-top: 8px;
   margin-left: auto;
 }
 
